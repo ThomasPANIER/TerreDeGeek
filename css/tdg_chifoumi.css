@@ -1,4 +1,5 @@
-/* box avec bordure animée pour jeu du chiffoumi */
+/* box avec bordure animée pour jeu du chiffoumi 
+    box with animated border for Chiffoumi game */
 .container
 {  
     display: flex;
@@ -10,8 +11,8 @@
 .background-img
 {
     
-    height: 25rem;
-    width: 50rem;
+    height: 10rem;
+    width: 10rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -101,7 +102,7 @@
     position: absolute;
     width:100%;
     height: 2px;
-    background: #50dfdb;
+    background: rgb(161, 133, 216);;
     animation: animate 4s linear infinite;
 }  
 @keyframes animate 

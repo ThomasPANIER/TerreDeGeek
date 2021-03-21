@@ -1,5 +1,6 @@
 /* Page index */
-    /* Page index pour petit écran de moins de 480px */
+    /* Page index pour petit écran de moins de 480px
+    Index page for small screen less than 480px  */
 @media all and (max-width: 480px) 
 {
 h1#header_max
@@ -21,14 +22,18 @@ h1#header_mini
 }
 div#title_mini
 {
+    
     background-image: url("logo2_tdg_mini.ico");    
     background-position:top;
+    background-position-y: 10%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    margin-top: 20%;
 }
 }
 
-    /* Page index pour grand écran de plus de 481px */
+    /* Page index pour grand écran de plus de 481px 
+    Index page for large screen over 481px */
 @media all and (min-width: 481px) 
 {
 h1#header_mini
@@ -51,25 +56,11 @@ div#title_max
 {
     background-image: url("logo2_tdg.png");    
     background-position:top;
+    background-position-y: 5%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     
 }
-}
-
-h2, h3
-{
-    color:rgb(161, 133, 216);
-}
-
-a
-{
-    color: seashell;
-}
-
-a:hover
-{
-    color: orangered;
 }
 
 body
@@ -81,6 +72,43 @@ body
     background-repeat: no-repeat;
     font-family: sans-serif;
     font-size: 1.1em; 
+}
+
+ul#sect_menu
+{
+    background-color: black;
+    list-style: none;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    right: 1%;
+    top: -2%;
+    width: 100%; 
+}
+
+li#menu
+{
+    display: inline-block;
+    flex-wrap: wrap;    
+    text-align: center;
+    margin-top: 1%;
+    
+}
+
+h2, h3, h4
+{
+    color:rgb(161, 133, 216);
+}
+
+a
+{
+    text-decoration: none;
+    color: seashell;
+}
+
+a:hover
+{
+    color: orangered;
 }
 
 div
@@ -121,13 +149,12 @@ div#products
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-     
+    justify-content: space-around;     
 }
-/* Bordure animée pour les éléments dans la div products */
+/* Bordure animée pour les éléments dans la div products 
+Animated border for elements in div products */
 .element 
 {
-    position: relative;
     width: 245px;
     height: 245px;
     background: white;
@@ -136,7 +163,7 @@ div#products
     box-shadow: 20px 20px rgba(255, 255, 255, 0.00);
     transition: all .4s ease;
 }
-  .element:hover 
+.element:hover 
 {
     border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
     box-shadow: 10px 10px rgba(255, 255, 255, 0.500);
@@ -146,9 +173,7 @@ div#detente
 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-image: url("chifoumi.png");
-    
+    align-items: center;  
 }
 
 div#sect_footer
@@ -159,16 +184,6 @@ div#sect_footer
     padding: 5%;
 }
 
-/* div#footer
-{
-    
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center; 
-    align-items: center;  
-    
-} */
-
 div#footer
 {
     
@@ -176,8 +191,7 @@ div#footer
     flex-wrap:wrap;
     justify-content: space-evenly; 
     align-items: center;  
-    margin-left: 5%;
-    
+    margin-left: 5%;    
 }
 
 /* page qui sommes nous */
@@ -187,7 +201,8 @@ div#qui_sommes_nous
     margin-left: 11%;
     margin-right: 5%;
 }
-    /* Pour tout les formats de plus de 480 px */
+    /* Pour tout les formats de plus de 480 px
+    For all formats over 480px  */
 @media all and (min-width: 481px)
 {
 div#retour_acceuil_big
@@ -202,7 +217,8 @@ div#retour_acceuil_mini
 }
 }
 
-    /* Petits Smartphones de moins de 480px */
+    /* Petits Smartphones de moins de 480px 
+    Small smartphones less than 480px */
 @media all and (max-width: 480px) 
 {
 div#retour_acceuil_big
@@ -215,4 +231,14 @@ div#retour_acceuil_mini
     position: sticky;
     top: 1%;    
 }
+}
+
+/* page products */
+div#products_element
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;     
 }
