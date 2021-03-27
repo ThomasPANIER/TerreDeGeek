@@ -18,7 +18,7 @@ h1#header_mini {
 }
 
 div#title_mini {    
-    background-image: url("logo2_tdg_mini.ico");    
+    background-image: url("../img/logo2_tdg_mini.ico");    
     background-position:top;
     background-position-y: 10%;
     background-attachment: fixed;
@@ -47,7 +47,7 @@ div#title_mini {
     }
     div#title_max {
         display: block;
-        background-image: url("logo2_tdg.png");    
+        background-image: url("../img/logo2_tdg.png");    
         background-position:top;
         background-position-y: 5%;
         background-attachment: fixed;
@@ -82,7 +82,7 @@ ul#sect_menu {
     margin-top: 1%;    
 }
 
-h1 a,p a,h2, h3, h4 {
+h1 a,p a,h2, h3, h4, legend {
     color:rgb(161, 133, 216);
 }
 
@@ -100,7 +100,7 @@ a:hover {
 }
 
 div#sect_contenu {
-    background-image: url("geek.jpg");
+    background-image: url("../img/geek.jpg");
     background-position: center;
     background-size: cover;
     background-attachment:fixed;
@@ -115,7 +115,7 @@ div#contenu {
 }
 
 div#sect_products {
-    background-image: url("hightech.jpg");
+    background-image: url("../img/hightech.jpg");
     background-position: center;
     background-size: cover;
     background-attachment:fixed;
@@ -130,6 +130,7 @@ div#products {
     flex-wrap: wrap;
     justify-content: space-around;     
 }
+
 /* Bordure animée pour les éléments dans la div products 
 Animated border for elements in div products */
 .element {
@@ -169,7 +170,7 @@ div#footer {
 
 /* page qui sommes nous */
 #contenu {
-    padding: 1%;
+    padding: 5%;
 }
     /* Pour tout les formats de plus de 1024 px
     For all formats over 1024px  */
@@ -190,7 +191,7 @@ div#footer {
 
     /* Petits Smartphones de moins de 1024px 
     Small smartphones less than 1024px */
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1023px) {
     div#retour_acceuil_big {
         display: none;    
     }
@@ -213,4 +214,27 @@ div#products_element {
     justify-content: flex-start;
     align-items: center;
     text-align: justify;     
+}
+
+/* page contact */
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+}
+
+.form {    
+    margin-top: 10%;
+}
+
+.form textarea {
+    size: auto;
+    margin-top: 5%;
+}
+
+#nom:invalid, #prenom:invalid, #email:invalid, #objet:invalid, #message:invalid {
+    border: 2px solid red;
 }
