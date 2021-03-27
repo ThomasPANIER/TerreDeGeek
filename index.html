@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -13,11 +13,11 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="favicon_tdg.ico">
+  <link rel="apple-touch-icon" href="img/favicon_tdg.ico">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon_tdg.ico">
-  <!-- <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon_tdg.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/tdg.css">
   <link rel="stylesheet" href="css/tdg_chifoumi.css">
 
@@ -27,18 +27,22 @@
 
 <body>
   <!-- Add your site or application content here -->
-  <div id="conteneur"> 
-    <div id="title_max">  
-    <h1 id="header_max"><a href ="css\geek.jpg" title="Elu meilleur magasin de France" style="color:rgb(161, 133, 216)" >TerreDeGeek</a></h1>
-    </div>
-    <div id="title_mini">  
-    <h1 id="header_mini"><a href ="css\geek.jpg" title="Elu meilleur magasin de France" style="color:rgb(161, 133, 216)" >TerreDeGeek</a></h1>
-    </div>
+  <div id="conteneur">
+
+    <header>
+      <div id="title_max">  
+        <h1 id="header_max"><a href ="img/geek.jpg" title="Elu meilleur magasin de France">TerreDeGeek</a></h1>
+      </div>
+      <div id="title_mini">  
+        <h1 id="header_mini"><a href ="img/geek.jpg" title="Elu meilleur magasin de France">TerreDeGeek</a></h1>
+      </div>
+    </header>
+
     <nav>
       <ul id="sect_menu">
-        <li id="menu"><a href= "#sect_contenu">Qui sommes nous ?</a></li>
-        <li id="menu"><a href= "#sect_products">Catalogue produits</a></li>
-        <li id="menu"><a href= "#detente">Un jeu pour se détendre</a></li>
+        <li class="menu"><a href= "qui_sommes_nous.html">Qui sommes nous ?</a></li>
+        <li class="menu"><a href= "#sect_products">Catalogue produits</a></li>
+        <li class="menu"><a href= "#detente">Un jeu pour se détendre</a></li>
       </ul>
     </nav>
     
@@ -72,8 +76,8 @@
           Cu mucius intellegebat delicatissimi eum, illum movet labore usu ei. 
           At ferri ubique vix, has eu omnesque evertitur, commodo nusquam deleniti in sed. 
           Euismod intellegat per cu. Cum et eros quaestio, enim populo cum in.
-          <br>
-          <a href="qui_sommes_nous.html" alt="Qui sommes nous ?">...Lire la suite...</a>
+          <br><br>
+          <a href="qui_sommes_nous.html" title="Qui sommes nous ?">...Lire la suite...</a>
         </p>
       </div>
     </div>
@@ -81,19 +85,18 @@
     <div id="sect_products">
       <h2>Catalogue produits</h2>
       <div id="products">    
-          <div class="element"><a href="hifi.html" title="Hifi"><img src="css\hifi.png"></a></div>
-          <div class="element"><a href="obj_connect.html" title="Objets connectés"><img src="css\obj_connect.png"></a></div>
-          <div class="element"><a href="telephonie.html" title="Téléphonie"><img src="css\telephonie.png"></a></div>
-          <div class="element"><a href="orinateur.html" title="Ordinateur"><img src="css\ordinateur.png"></a></div>
-          <div class="element"><a href="stockage.html" title="Stockage"><img src="css\stockage.png"></a></div>     
+          <div class="element"><a href="hifi.html" title="Hifi"><img src="img/hifi.png"></a></div>
+          <div class="element"><a href="obj_connect.html" title="Objets connectés"><img src="img/obj_connect.png"></a></div>
+          <div class="element"><a href="telephonie.html" title="Téléphonie"><img src="img/telephonie.png"></a></div>
+          <div class="element"><a href="orinateur.html" title="Ordinateur"><img src="img/ordinateur.png"></a></div>
+          <div class="element"><a href="stockage.html" title="Stockage"><img src="img/stockage.png"></a></div>     
       </div>
     </div>
 
     <div id="detente">
       <div id="detente_title">
-      <h2>Un jeu pour se détendre</h2>
-        
-        <section>        
+        <h2>Un jeu pour se détendre</h2>        
+        <section>
           <div class="container">
             <div class="background-img">
               <div class="box">
@@ -102,23 +105,25 @@
                 <span></span>
                 <span></span>
                 <div class="content">          
-                  <p><a href="chifoumi.html" style="color:rgb(161, 133, 216);" target="_blank">Jeu du ChiFouMi</a></p>
+                  <p><a href="chifoumi.html" target="_blank">Jeu du ChiFouMi</a></p>
                 </div>        
               </div>
             </div>
           </div>
         </section>
       </div>
-  </div>
-    
-    <div id="sect_footer">
-      <h2>Mentions légales</h2>
-      <div id="footer">
-        <div class="element2"><a href="contact.html" title="Contacts"><img src="css\contact.jpg" alt="Contact"></div>
-        <div class="element2"><a href="garanties.html" title="Garanties"><img src="css\garanties.jpg" alt="Garanties"></div>
-        <div class="element2"><a href="politique.html" title="Politique de retour"><img src="css\retour.png" alt="Politique de retour"></div>      
-      </div>
     </div>
+    
+    <footer>
+      <div id="sect_footer">
+          <h2>Mentions légales</h2>
+        <div id="footer">
+          <div class="element2"><a href="contact.html" title="Contacts"><img src="img/contact.jpg" alt="Contact"></div>
+          <div class="element2"><a href="garanties.html" title="Garanties"><img src="img/garanties.jpg" alt="Garanties"></div>
+          <div class="element2"><a href="politique.html" title="Politique de retour"><img src="img/retour.png" alt="Politique de retour"></div>      
+        </div>
+      </div>
+    </footer>
 
   </div>
   
@@ -135,6 +140,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/e79ae7c794.js" crossorigin="anonymous"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

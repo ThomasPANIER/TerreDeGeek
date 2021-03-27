@@ -16,8 +16,8 @@
   <link rel="apple-touch-icon" href="favicon_tdg.ico">
   <!-- Place favicon.ico in the root directory -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon_tdg.ico">
-  <!-- <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/tdg.css">
 
 
@@ -26,37 +26,89 @@
 
 <body>
   <!-- Add your site or application content here -->
-  <div id="contenu">
-    <h3>Contact</h3>
-    <p>
-        Sit voluptaria consequuntur interpretaris ea, salutatus comprehensam usu ea. 
-        Qui te summo electram iracundia, ex mel scripta tritani. 
-        Eos eius minim laoreet ne, labitur pertinax est ne. 
-        Nam et tamquam appellantur, enim mediocrem cu cum. 
-        Everti verear cu has, ad quo facete fastidii. Te est alia ubique. 
-        Mea in populo utamur assueverit, delenit oportere explicari in sit, possim abhorreant deterruisset ea ius. 
-        Eam ei augue possit minimum. Eam cu facete mollis, debitis patrioque quaerendum duo eu. 
-        Pri probo error id. Tation volumus cu sea, id enim agam meis vim. 
-        Cu mucius intellegebat delicatissimi eum, illum movet labore usu ei. 
-        At ferri ubique vix, has eu omnesque evertitur, commodo nusquam deleniti in sed. 
-        Euismod intellegat per cu. Cum et eros quaestio, enim populo cum in.
-    </p>
-    <p>
-        tel:00.00.00.00.00 <br>
-        fax:00.00.00.00.01 <br>
-        adresse: Palais du président 75000 PARIS
-    </p>
-    <p>
-      <a href="index.html" alt="Retour page d'accueil">Retour page d'accueil</a>
-    </p>
-    <div id="sect_footer">
-      <h2>Mentions légales</h2>
-      <div id="footer">
-        <div class="element2"><a href="contact.html" title="Contacts"><img src="css\contact.jpg" alt="Contact"></div>
-        <div class="element2"><a href="garanties.html" title="Garanties"><img src="css\garanties.jpg" alt="Garanties"></div>
-        <div class="element2"><a href="politique.html" title="Politique de retour"><img src="css\retour.png" alt="Politique de retour"></div>      
+  <div id="conteneur">
+
+    <div id="contenu">
+      <h3>Contact</h3>
+      <p>
+          Sit voluptaria consequuntur interpretaris ea, salutatus comprehensam usu ea. 
+          Qui te summo electram iracundia, ex mel scripta tritani. 
+          Eos eius minim laoreet ne, labitur pertinax est ne. 
+          Nam et tamquam appellantur, enim mediocrem cu cum. 
+          Everti verear cu has, ad quo facete fastidii. Te est alia ubique. 
+          Mea in populo utamur assueverit, delenit oportere explicari in sit, possim abhorreant deterruisset ea ius. 
+          Eam ei augue possit minimum. Eam cu facete mollis, debitis patrioque quaerendum duo eu. 
+          Pri probo error id. Tation volumus cu sea, id enim agam meis vim. 
+          Cu mucius intellegebat delicatissimi eum, illum movet labore usu ei. 
+          At ferri ubique vix, has eu omnesque evertitur, commodo nusquam deleniti in sed. 
+          Euismod intellegat per cu. Cum et eros quaestio, enim populo cum in.
+      </p>
+      <p>
+          tel:00.00.00.00.00 <br>
+          fax:00.00.00.00.01 <br>
+          adresse: Palais du président 75000 PARIS
+      </p>
+
+      <div id="form">
+        <div class="form">
+          <form>
+            <fieldset>
+              <legend>Pour nous contacter, rentrez vos informations :</legend>Champs obligatoires * <br> <br>             
+              <input type="radio" name="Sexe" value="Homme"> <label>Homme</label> <br>
+              <input type="radio" name="Sexe" value="Femme"> <label>Femme</label> <br>
+              <br>
+              <label for="nom">Quel est votre nom ? *</label> <br>
+              <input type="text" name="nom" id="nom" required aria-invalid="grammar"  /> <br>
+              <br>
+              <label for="prenom">Quel est votre prénom ? *</label> <br>
+              <input type="text" name="prenom" id="prenom" required aria-invalid="grammar" /> <br>
+              <br>
+              <label for="email">Quel est votre e-mail ? *</label> <br>
+              <input type="email" name="email" id="email" required aria-invalid="grammar" /> <br>
+              <br>
+              <label for="tel">Quel est votre téléphone ?</label> <br>
+              <input type="tel" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" name="tel" id="tel" aria-invalid="grammar"> <br>
+              <br>
+              <label for="age">Date de naissance ?</label> <br>
+              <input type="date" name="age" id="age"> <br>
+              <br>
+              <label for="objet">Quel est votre demande ? *</label> <br>
+              <select name="objet" id="objet" required>
+                <option value="">Choisissez</option>        
+                <option value="information">Information</option>
+                <option value="reclamation">Réclamation</option>
+                <option value="partenariat">Partenariat</option>
+                <option value="autre">Autre</option>
+              </select>              
+            </fieldset>
+          </form> 
+        </div>        
+        <div class="form">
+          <form>
+            <label for="message">Votre message : *</label> <br>
+            <textarea name="message" id="message" required aria-invalid="grammar" rows="10" cols="26" placeholder="Tapez votre message ici"></textarea>
+          </form>
+          <input type="submit" value="Valider">
+        </div>  
       </div>
+
+      <p>
+        <a href="index.html" alt="Retour page d'accueil">Retour page d'accueil</a>
+      </p>
+
     </div>
+
+    <footer>
+      <div id="sect_footer">
+          <h2>Mentions légales</h2>
+        <div id="footer">
+          <div class="element2"><a href="contact.html" title="Contacts"><img src="img/contact.jpg" alt="Contact"></div>
+          <div class="element2"><a href="garanties.html" title="Garanties"><img src="img/garanties.jpg" alt="Garanties"></div>
+          <div class="element2"><a href="politique.html" title="Politique de retour"><img src="img/retour.png" alt="Politique de retour"></div>      
+        </div>
+      </div>
+    </footer>
+
   </div>
 
 
