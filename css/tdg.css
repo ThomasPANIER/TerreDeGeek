@@ -1,71 +1,61 @@
-/* Page index */
+/* Page index header*/
     /* Page index pour petit écran de moins de 480px
     Index page for small screen less than 480px  */
-@media all and (max-width: 480px) 
-{
-h1#header_max
-{
-    display: none;
-}
-div#title_max
-{
+h1#header_max {
     display: none;
 }
 
-h1#header_mini
-{
+div#title_max {
+    display: none;
+}
+
+h1#header_mini {
 	max-width: 100%;
 	height: 250px;    
     text-align:center;
     font-size: 2.2em;
     margin: 0% 0% 0%;
 }
-div#title_mini
-{
-    
-    background-image: url("logo2_tdg_mini.ico");    
+
+div#title_mini {    
+    background-image: url("../img/logo2_tdg_mini.ico");    
     background-position:top;
     background-position-y: 10%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     margin-top: 20%;
 }
-}
 
-    /* Page index pour grand écran de plus de 481px 
+
+    /* Page index header pour grand écran de plus de 481px 
     Index page for large screen over 481px */
-@media all and (min-width: 481px) 
-{
-h1#header_mini
-{
-    display: none;
-}
-div#title_mini
-{
-    display: none;
-}
+@media all and (min-width: 481px) {
+    h1#header_mini {
+        display: none;
+    }
 
-h1#header_max
-{
-    max-width: 100%;
-    height: 450px;    
-    text-align:center;
-    font-size: 5em;
-}
-div#title_max
-{
-    background-image: url("logo2_tdg.png");    
-    background-position:top;
-    background-position-y: 5%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
-}
-}
+    div#title_mini {
+        display: none;
+    }
 
-body
-{
-    
+    h1#header_max {
+        display: block;
+        max-width: 100%;
+        height: 450px;    
+        text-align:center;
+        font-size: 5em;
+    }
+    div#title_max {
+        display: block;
+        background-image: url("../img/logo2_tdg.png");    
+        background-position:top;
+        background-position-y: 5%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;        
+    }
+}
+/* page index */
+body {    
     background-color: black;
     background-size: cover;
     background-attachment:fixed;
@@ -74,8 +64,7 @@ body
     font-size: 1.1em; 
 }
 
-ul#sect_menu
-{
+ul#sect_menu {
     background-color: black;
     list-style: none;
     position: fixed;
@@ -86,39 +75,32 @@ ul#sect_menu
     width: 100%; 
 }
 
-li#menu
-{
+.menu {
     display: inline-block;
     flex-wrap: wrap;    
     text-align: center;
-    margin-top: 1%;
-    
+    margin-top: 1%;    
 }
 
-h2, h3, h4
-{
+h1 a,p a,h2, h3, h4, legend {
     color:rgb(161, 133, 216);
 }
 
-a
-{
+a {
     text-decoration: none;
     color: seashell;
 }
 
-a:hover
-{
+a:hover {
     color: orangered;
 }
 
-div
-{
+#sect_contenu, #sect_products, #detente, .element {
     margin-block-end: 5%;
 }
 
-div#sect_contenu
-{
-    background-image: url("geek.jpg");
+div#sect_contenu {
+    background-image: url("../img/geek.jpg");
     background-position: center;
     background-size: cover;
     background-attachment:fixed;
@@ -126,16 +108,14 @@ div#sect_contenu
     padding: 5%;
 }
 
-div#contenu
-{
+div#contenu {
     font-size: 1.2em;
     text-align: justify;
     color: seashell;
 }
 
-div#sect_products
-{
-    background-image: url("hightech.jpg");
+div#sect_products {
+    background-image: url("../img/hightech.jpg");
     background-position: center;
     background-size: cover;
     background-attachment:fixed;
@@ -145,16 +125,15 @@ div#sect_products
     padding: 5%; 
 }
 
-div#products
-{
+div#products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;     
 }
+
 /* Bordure animée pour les éléments dans la div products 
 Animated border for elements in div products */
-.element 
-{
+.element {
     width: 245px;
     height: 245px;
     background: white;
@@ -163,30 +142,25 @@ Animated border for elements in div products */
     box-shadow: 20px 20px rgba(255, 255, 255, 0.00);
     transition: all .4s ease;
 }
-.element:hover 
-{
+.element:hover {
     border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
     box-shadow: 10px 10px rgba(255, 255, 255, 0.500);
 }
 
-div#detente
-{
+div#detente {
     display: flex;
     justify-content: center;
     align-items: center;  
 }
 
-div#sect_footer
-{
+div#sect_footer {
     background-color: rgb(25, 26, 27);
     color: seashell;
     text-align:center;
     padding: 5%;
 }
 
-div#footer
-{
-    
+div#footer {    
     display: flex;
     flex-wrap:wrap;
     justify-content: space-evenly; 
@@ -195,50 +169,72 @@ div#footer
 }
 
 /* page qui sommes nous */
-
-div#qui_sommes_nous
-{
-    margin-left: 11%;
-    margin-right: 5%;
+#contenu {
+    padding: 5%;
 }
-    /* Pour tout les formats de plus de 480 px
-    For all formats over 480px  */
-@media all and (min-width: 481px)
-{
-div#retour_acceuil_big
-{    
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1%;    
-}
-div#retour_acceuil_mini
-{
-    display:none;
-}
+    /* Pour tout les formats de plus de 1024 px
+    For all formats over 1024px  */
+@media all and (min-width: 1024px) {
+    div#retour_acceuil_big {    
+        position: -webkit-sticky;
+        position: sticky;
+        top: 1%;    
+    }
+    div#retour_acceuil_mini {
+        display:none;
+    }
+    div#qui_sommes_nous {
+        margin-left: 14%;
+        margin-right: 5%;
+    }
 }
 
-    /* Petits Smartphones de moins de 480px 
-    Small smartphones less than 480px */
-@media all and (max-width: 480px) 
-{
-div#retour_acceuil_big
-{
-    display: none;    
-}
-div#retour_acceuil_mini
-{    
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1%;    
-}
+    /* Petits Smartphones de moins de 1024px 
+    Small smartphones less than 1024px */
+@media all and (max-width: 1023px) {
+    div#retour_acceuil_big {
+        display: none;    
+    }
+
+    div#retour_acceuil_mini {    
+        position: -webkit-sticky;
+        position: sticky;
+        top: 1%;    
+    }
+    div#qui_sommes_nous {
+        margin-left: 8%;
+        margin-right: 5%;
+    }
 }
 
 /* page products */
-div#products_element
-{
+div#products_element {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     text-align: justify;     
+}
+
+/* page contact */
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+}
+
+.form {    
+    margin-top: 10%;
+}
+
+.form textarea {
+    size: auto;
+    margin-top: 5%;
+}
+
+#nom:invalid, #prenom:invalid, #email:invalid, #objet:invalid, #message:invalid {
+    border: 2px solid red;
 }
