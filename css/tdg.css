@@ -26,7 +26,6 @@ div#title_mini {
     margin-top: 20%;
 }
 
-
     /* Page index header pour grand écran de plus de 481px 
     Index page for large screen over 481px */
 @media all and (min-width: 481px) {
@@ -136,7 +135,6 @@ div#products {
 }
 
 /* page index nav prestation annexes */
-
 #annexe {
     width: 15%;
     height: 5vh;
@@ -212,10 +210,6 @@ for screen less than 1024 px */
     }
 }
 
-
-
-
-
 /* Bordure animée pour les éléments dans la div products 
 Animated border for elements in div products */
 .element {
@@ -259,7 +253,6 @@ div#footer {
 }
 
 /* format for all video */
-
 #video {
     display: flex;
     justify-content: center;
@@ -314,7 +307,6 @@ div#products_element {
 }
 
 /* page contact */
-
 #form {
     display: flex;
     flex-wrap: wrap;
@@ -337,7 +329,6 @@ div#products_element {
 }
 
 /* page prestation */
-
 #table {    
     margin: 10% 0 10% 0;
 }
