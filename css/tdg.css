@@ -82,6 +82,10 @@ ul#sect_menu {
     margin-top: 1%;    
 }
 
+.menu:hover {
+    font-size: 1.2em;
+}
+
 h1 a,p a,h2, h3, h4, legend {
     color:rgb(161, 133, 216);
 }
@@ -131,6 +135,87 @@ div#products {
     justify-content: space-around;     
 }
 
+/* page index nav prestation annexes */
+
+#annexe {
+    width: 15%;
+    height: 5vh;
+    overflow: hidden;
+    transition:linear 1s
+}
+
+#annexe:hover {
+    width: 100%;
+    height: 100%;    
+}
+
+.annexes a:hover {
+    font-size: 1.2em;
+}
+
+#ul_annexe {
+    display: flex;    
+    justify-content: space-between;
+    background-color: black;
+    margin: 0;
+    padding: 0;    
+    height: 5vh;
+    width: 100%;    
+}
+
+#ul_annexe2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    margin: 0;
+    padding: 0;    
+    height: 10vh;
+    width: 100%; 
+}
+
+.annexes {    
+    list-style: none;     
+    padding: auto;
+    text-align: center;
+    margin: auto;
+}
+
+/* page index nav prestation annexes 
+for screen less than 1024 px */
+@media all and (max-width: 1023px) {
+    #annexe {
+        width: 100%;
+        height: 4vh;
+        overflow: hidden;
+        transition: 1s linear 1s
+    }
+    #ul_annexe {
+        display: flex;    
+        justify-content: space-between;
+        background-color: black;
+        margin: 0;
+        padding: 0;            
+        height: 5vh;
+        width: 100%; 
+    }
+    #ul_annexe2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: black;
+        margin: auto;
+        padding: auto;        
+        height: 100%;
+        width: 100%;
+        margin-top: 5%; 
+    }
+}
+
+
+
+
+
 /* Bordure animée pour les éléments dans la div products 
 Animated border for elements in div products */
 .element {
@@ -165,13 +250,25 @@ div#footer {
     flex-wrap:wrap;
     justify-content: space-evenly; 
     align-items: center;  
-    margin-left: 5%;    
+    margin-left: 5%;     
 }
 
 /* page qui sommes nous */
 #contenu {
     padding: 5%;
 }
+
+/* format for all video */
+
+#video {
+    display: flex;
+    justify-content: center;
+}
+
+#video video {
+    width: 80%;
+}
+
     /* Pour tout les formats de plus de 1024 px
     For all formats over 1024px  */
 @media all and (min-width: 1024px) {
@@ -237,4 +334,44 @@ div#products_element {
 
 #nom:invalid, #prenom:invalid, #email:invalid, #objet:invalid, #message:invalid {
     border: 2px solid red;
+}
+
+/* page prestation */
+
+#table {    
+    margin: 10% 0 10% 0;
+}
+
+.table_titre {
+    text-align: center;
+    margin-block-end: 10%;
+}
+
+.table {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+}
+
+.table table {    
+    text-align: center;
+    width: 95%;
+}
+
+caption, td, th, tr {
+    padding: auto;
+    height: 10vh;
+    width: auto;
+    background-color: white;
+}
+
+caption {
+    background-image: url("../img/geek.jpg");
+    background-position: center;
+}
+
+tr:hover {
+    color: rgb(161, 133, 216);
 }
